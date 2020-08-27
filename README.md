@@ -1,1 +1,1 @@
-# ASPNET_Practice
+# ASP.NET & Core Practice Repository
