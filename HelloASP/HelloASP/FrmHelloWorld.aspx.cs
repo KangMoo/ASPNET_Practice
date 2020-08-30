@@ -21,7 +21,7 @@ namespace HelloASP
 
         protected void btnClick_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text = "WOW";
+            txtDisplay.Text = "Hello ASP";
         }
     }
 }
