@@ -17,19 +17,21 @@ namespace HelloASP2
             string strAge = String.Empty;
 
             // [1] Request 객체의 QueryString 컬렉션
-            strUserId = Request.QueryString["UserID"];
+            strUserId = Request["UserID"];
             // [2] Request 객체의 Params 컬렉션
             strPassword = Request.Params["Password"];
             // [3] Request 객체의 Form 컬렉션
             strName = Request.Form["Name"];
             // [4] Request 객체 자체로 받기
             strAge = Request["Age"];
+            Response.Clear();
             string strMsg = String.Format(
-                "입력하신 아디이는 {0}이고<br/>" +
-                "암호는 {1}입니다. <br/>" +
-                "이름은 {2}이고<br/>" +
-                "나이는 {3}살 입니다.<br/>", strUserId, strPassword, strName, strAge);
+                "입력하신 아이디는 {0}이고<br />" +
+                "암호는 {1}입니다.<br />" +
+                "이름은 {2}이고<br />" +
+                "나이는 {3}살 입니다.<br />", strUserId, strPassword, strName, strAge);
             Response.Write(strMsg);
+            Response.Flush();
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
