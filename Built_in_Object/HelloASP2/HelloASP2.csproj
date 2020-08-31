@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmApplicationSession.aspx" />
     <Content Include="FrmASPNET.aspx" />
     <Content Include="FrmRequest.aspx" />
     <Content Include="FrmRequestUserHostAddress.aspx" />
@@ -77,6 +78,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmApplicationSession.aspx.cs">
+      <DependentUpon>FrmApplicationSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmApplicationSession.aspx.designer.cs">
+      <DependentUpon>FrmApplicationSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmASPNET.aspx.cs">
       <DependentUpon>FrmASPNET.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
