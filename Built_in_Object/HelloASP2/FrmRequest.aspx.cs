@@ -30,7 +30,6 @@ namespace HelloASP2
                 "이름은 {2}이고<br />" +
                 "나이는 {3}살 입니다.<br /><div/>", strUserId, strPassword, strName, strAge);
             Response.Write(strMsg);
-            // 왜 크롬에서는 이상하게 보이고, 익플에서는 잘 보일까...?
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
