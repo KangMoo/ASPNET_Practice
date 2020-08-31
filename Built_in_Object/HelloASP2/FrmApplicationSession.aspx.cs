@@ -32,6 +32,7 @@ namespace HelloASP2
             {
                 Session["Count"] = (int)Session["Count"] + 1;
             }
+
             // [3] 출력
             // 누구나 다 1씩 증가
             this.lblApplication.Text = Application["Count"].ToString();

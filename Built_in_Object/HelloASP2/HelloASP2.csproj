@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="FrmApplicationSession.aspx" />
     <Content Include="FrmASPNET.aspx" />
+    <Content Include="FrmPageLoad.aspx" />
     <Content Include="FrmRequest.aspx" />
     <Content Include="FrmRequestUserHostAddress.aspx" />
     <Content Include="FrmResponseBuffer.aspx" />
@@ -91,6 +92,13 @@
     </Compile>
     <Compile Include="FrmASPNET.aspx.designer.cs">
       <DependentUpon>FrmASPNET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPageLoad.aspx.cs">
+      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPageLoad.aspx.designer.cs">
+      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmRequest.aspx.cs">
       <DependentUpon>FrmRequest.aspx</DependentUpon>
