@@ -24,14 +24,13 @@ namespace HelloASP2
             strName = Request.Form["Name"];
             // [4] Request 객체 자체로 받기
             strAge = Request["Age"];
-            Response.Clear();
             string strMsg = String.Format(
-                "입력하신 아이디는 {0}이고<br />" +
+                "<div>입력하신 아이디는 {0}이고<br />" +
                 "암호는 {1}입니다.<br />" +
                 "이름은 {2}이고<br />" +
-                "나이는 {3}살 입니다.<br />", strUserId, strPassword, strName, strAge);
+                "나이는 {3}살 입니다.<br /><div/>", strUserId, strPassword, strName, strAge);
             Response.Write(strMsg);
-            Response.Flush();
+            // 왜 크롬에서는 이상하게 보이고, 익플에서는 잘 보일까...?
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
