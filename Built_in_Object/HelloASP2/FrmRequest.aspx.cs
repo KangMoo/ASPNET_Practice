@@ -29,6 +29,7 @@ namespace HelloASP2
                 "암호는 {1}입니다. <br/>" +
                 "이름은 {2}이고<br/>" +
                 "나이는 {3}살 입니다.<br/>", strUserId, strPassword, strName, strAge);
+            Response.Write(strMsg);
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
